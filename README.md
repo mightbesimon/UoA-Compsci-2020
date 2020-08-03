@@ -20,7 +20,7 @@ but it was easy
 check out the [assignment submissions](https://github.com/mightbesimon/Uoa-CompSci-2020/blob/master/130%20assignment/Ass.py),  
 really well commented, they're just beautiful
 
-#### Prerequisite ####
+### Prerequisite ###
 
 [Python 3](https://www.python.org/downloads/) - the language used in this course
 ```bash
@@ -28,7 +28,7 @@ $ python3 --version
 Python 3.7.6
 ```
 
-#### Setup ####
+### Setup ###
 
 > terminal + sublime, personally  
 > any more is just too much
@@ -53,7 +53,7 @@ save as `~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Python\ 3
 - LC3 assembly language
 - advanced C programming (some were covered in Engineering)
 
-#### Prerequisites ####
+### Prerequisites ###
 
 [LC3 simulator](https://github.com/mightbesimon/Uoa-CompSci-2020/blob/master/LC3%20assembly/LC3sim.jar) `lc3sim.jar`  
 [LC3 Operating System](https://github.com/mightbesimon/Uoa-CompSci-2020/blob/master/LC3%20assembly/source/lc3os.asm) `lc3os.asm`  
@@ -62,7 +62,7 @@ save as `~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Python\ 3
 
 GCC for compiling C
 
-#### Assembling ####
+### Assembling ###
 
 to build an object file  
 in the LC3 simulator command line:
@@ -87,14 +87,14 @@ set R2 x3000
 sets register 2 to value x3000, this is needed in some programs  
 that starts with `.ORIGIN x3000` without OS
 
-#### Compiling C ####
+### Compiling C ###
 
-###### Sublime ######
+##### Sublime #####
 Cmd+B to build and run without args in sublime
 > can't run arguments  
 > can't take console inputs (which you shouldn't in C anyways)
 
-###### Console ( my custom function :D ) ######
+##### Console ( my custom function :D ) #####
 append to `.bash_profile`
 ```bash
 function compile() {
@@ -110,7 +110,7 @@ $ compile program.c
 $ ./program arg1 arg2
 ```
 
-#### SSH Server Access ####
+### SSH Server Access ###
 
 to login
 ```bash
@@ -125,7 +125,7 @@ these are just some scripts I wrote to aid breaking encrytions and steganographs
 - XOR cipher
 - LSB stegano
 
-#### Use ####
+### Use ###
 
 Import functions as needed  
 example:
@@ -138,7 +138,7 @@ ciphertext = xor_hex('89AB', 'DE01')
 
 [course description]
 
-#### Prerequisites ####
+### Prerequisites ###
 
 [Java JDK](https://www.oracle.com/java/technologies/javase-jdk13-downloads.html) - the language used in this course
 
@@ -152,17 +152,17 @@ Java(TM) SE Runtime Environment (build 13.0.2+8)
 Java HotSpot(TM) 64-Bit Server VM (build 13.0.2+8, mixed mode, sharing)
 ```
 
-#### Setup ####
+### Setup ###
 
 > once again  
 > terminal + sublime  
 > I dislike IDEs such as Eclipse. Hate the suggestions, I don't need to be told what to do
 
-###### Bash Aliases and Functions ######
+##### Bash Aliases and Functions #####
 [My own compiling functions :D](https://gist.github.com/mightbesimon/dcf81e22fab277e478ac4ab093c62d77)  
 append to `.bash_profile`
 
-###### Command Line ######
+##### Command Line #####
 ```bash
 $ javac classname.c
 $ javac classname.c -d build/	# puts class files inside a build folder
@@ -175,7 +175,7 @@ $ jar cvfe classname.jar classname -C build/ .
 $ java -jar classname.jar
 ```
 
-###### Sublime ######
+##### Sublime #####
 compile and run:  
 save as `~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/JavaBuild.sublime-build`
 
@@ -199,7 +199,7 @@ save as `~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Jar.subli
 }
 ```
 
-#### [descriptive title] ###
+### [descriptive title] ###
 
 [some sort of description goes here]
 
