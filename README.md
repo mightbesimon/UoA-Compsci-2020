@@ -17,12 +17,16 @@
 basic Python, I didn't like this class  
 but it was easy
 
-check out the [assignment submissions](./130\ assignment/Ass.py),  
+check out the [assignment submissions](https://github.com/mightbesimon/Uoa-CompSci-2020/blob/master/130%20assignment/Ass.py),  
 really well commented, they're just beautiful
 
 #### Prerequisite ####
 
 [Python 3](https://www.python.org/downloads/) - the language used in this course
+```bash
+$ python3 --version
+Python 3.7.6
+```
 
 #### Setup ####
 
@@ -47,12 +51,12 @@ save as `~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Python\ 3
 ## COMPSCI 210 ##
 
 - LC3 assembly language
-- advanced C programming (some covered in Engineering)
+- advanced C programming (some were covered in Engineering)
 
 #### Prerequisites ####
 
-[LC3 simulator](LC3\ assmebly/lc3sim.jar) `lc3sim.jar`  
-[LC3 Operating System](LC3 assembly/source/lc3os.asm) `lc3os.asm`  
+[LC3 simulator](https://github.com/mightbesimon/Uoa-CompSci-2020/blob/master/LC3%20assembly/LC3sim.jar) `lc3sim.jar`  
+[LC3 Operating System](https://github.com/mightbesimon/Uoa-CompSci-2020/blob/master/LC3%20assembly/source/lc3os.asm) `lc3os.asm`  
 [Java](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html) to run the simulator
 > JRE or JDK, either are fine
 
@@ -121,13 +125,26 @@ these are just some scripts I wrote to aid breaking encrytions and steganographs
 - XOR cipher
 - LSB stegano
 
+#### Use ####
+
+Import functions as needed  
+example:
+```
+from xor_hex import *
+ciphertext = xor_hex('89AB', 'DE01')
+```
+
 ## COMPSCI 230 ##
 
 [course description]
 
 #### Prerequisites ####
 
-[Java](https://www.oracle.com/java/technologies/javase-jdk13-downloads.html) - the language used in this course
+[Java JDK](https://www.oracle.com/java/technologies/javase-jdk13-downloads.html) - the language used in this course
+
+> JRE is only the runtime environment  
+> to code java you need JDK
+
 ```bash
 $ java --version
 java 13.0.2 2020-01-14
@@ -142,7 +159,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 13.0.2+8, mixed mode, sharing)
 > I dislike IDEs such as Eclipse. Hate the suggestions, I don't need to be told what to do
 
 ###### Bash Aliases and Functions ######
-[Compiling functions](https://gist.github.com/mightbesimon/dcf81e22fab277e478ac4ab093c62d77)  
+[My own compiling functions :D](https://gist.github.com/mightbesimon/dcf81e22fab277e478ac4ab093c62d77)  
 append to `.bash_profile`
 
 ###### Command Line ######
@@ -164,7 +181,6 @@ save as `~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/JavaBuild
 
 ```json
 {
-	// "shell_cmd":	"javac $file && java $file_base_name",
 	"cmd":			["javac -d build/ $file && java -cp build/ $file_base_name"],
 	"shell":		true,
 	"file_regex":	"^(...*?):([0-9]*):?([0-9]*)",
@@ -176,7 +192,6 @@ compile to .jar:
 save as `~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Jar.sublime-build`
 ```json
 {
-	// "shell_cmd":	"javac $file && java $file_base_name",
 	"cmd":			["javac $file -d build/ && jar cvfe $file_base_name.jar $file_base_name -C build/ . && java -jar $file_base_name.jar"],
 	"shell":		true,
 	"file_regex":	"^(...*?):([0-9]*):?([0-9]*)",
